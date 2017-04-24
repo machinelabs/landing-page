@@ -13,9 +13,12 @@
     <!-- Web Application Manifest -->
     <link rel="manifest" href="manifest.json">
 
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/touch/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/touch/favicon-16x16.png">
     <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
     <!-- Add to homescreen for Safari on iOS -->
@@ -44,20 +47,22 @@
   <body>
 
     <div class="flex-container">
-      <hgroup>
-        <h1 class="logo">Machine<span>Labs</span></h1>
-        <h2 class="tagline">Machine Learning for everyone</h3>
-      </hgroup>
-      <p class="intro">Request an invite for our <strong>private beta</strong> and run your machine learning code in the cloud.</p>
-      <div>
-        <form action="//thoughtram.us8.list-manage.com/subscribe/post?u=dfbb1507fbced5a20d9dc5698&amp;id=731f22cdca" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
-          <label for="mce-EMAIL"></label>
-          <input type="email" value="" name="EMAIL" placeholder="Request invite" required="" class="email-input">
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_dfbb1507fbced5a20d9dc5698_731f22cdca" tabindex="-1" value=""></div>
-          <button type="submit" name="subscribe" class="submit-btn"><i class="material-icons">send</i></button>
-        </form>
+      <div class="wrapper">
+        <hgroup>
+          <h1 class="logo">Machine<span>Labs</span></h1>
+          <h2 class="tagline">Machine Learning for everyone</h3>
+        </hgroup>
+        <p class="intro">Request an invite for our <strong>private beta</strong> today <span>and run your machine learning code in the web.</span></p>
+        <div>
+          <form action="//thoughtram.us8.list-manage.com/subscribe/post?u=dfbb1507fbced5a20d9dc5698&amp;id=731f22cdca" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+            <label for="mce-EMAIL"></label>
+            <input type="email" value="" name="EMAIL" placeholder="Request invite" required="" class="email-input">
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_dfbb1507fbced5a20d9dc5698_731f22cdca" tabindex="-1" value=""></div>
+            <button type="submit" name="subscribe" class="submit-btn"><i class="material-icons">send</i></button>
+          </form>
+        </div>
+        <p class="outro">Learn more in our <a href="#" title="MachineLabs preview announcement">preview announcement</a></p>
       </div>
-      <p class="outro">Learn more in our <a href="#" title="MachineLabs preview announcement">preview announcement</a>!</p>
     </div>
 
     <!-- build:js scripts/main.min.js -->
@@ -70,7 +75,7 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('create', 'UA-98016628-1', 'auto');
       ga('send', 'pageview');
     </script>
     <!-- Built with love using Web Starter Kit -->
