@@ -10,12 +10,12 @@ html, body {
   padding: 0;
   height: 100%;
   background-color: #03a9f4;
-  background: url('/images/screen.png'), -webkit-linear-gradient(305deg,#0D47A1,#42A5F5);
-  background: url('/images/screen.png'), linear-gradient(145deg,#0D47A1,#42A5F5);
+  background: url('/images/screen-cut.png'), -webkit-linear-gradient(305deg,#0D47A1,#42A5F5);
+  background: url('/images/screen-cut.png'), linear-gradient(145deg,#0D47A1,#42A5F5);
   background-repeat: no-repeat no-repeat;
   background-position: 5em 40em, 0 0;
   background-size: 70em, cover;
-  background-attachment: local, fixed;
+  background-attachment: fixed, fixed;
   color: #fff;
 }
 
@@ -232,7 +232,7 @@ textarea {
 @media (min-width: 900px) {
 
   html, body {
-    background-position: center 38em, 0 0;
+    background-position: center bottom, 0 0;
   }
 
   .layout {
