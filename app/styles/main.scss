@@ -59,15 +59,17 @@ html, body {
   }
 }
 
+hgroup {
+  text-align: center;
+}
+
 .logo {
   margin: 0;
   font-weight: 300;
   font-size: 2.5em;
   text-align: center;
-
-  span {
-    font-weight: 500;
-  }
+  margin-bottom: 0.1em;
+  height: 35px;
 }
 
 .tagline {
@@ -181,11 +183,10 @@ textarea {
   .layout { padding-top: 0; }
 
   .logo {
-    font-size: 3.5em;
-    margin-top: 2em;
+    margin-top: 3em;
   }
 
-  .tagline { font-size: 1em; }
+  .tagline { font-size: 1.2em; }
 
   .intro {
     margin-top: 1em;
@@ -256,9 +257,9 @@ textarea {
   }
 
   .logo {
-    font-size: 4em;
     margin-top: 0;
   }
+
   .tagline { font-size: 1.2em; }
   .intro {
     font-size: 2em;
@@ -274,5 +275,9 @@ textarea {
 @media (min-width: 1200px) {
   .wrapper {
     max-width: 80%;
+  }
+
+  .logo {
+    height: 50px;
   }
 }
