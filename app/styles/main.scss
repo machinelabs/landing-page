@@ -10,13 +10,22 @@ html, body {
   padding: 0;
   height: 100%;
   background-color: #03a9f4;
+  background: -webkit-linear-gradient(305deg,#0D47A1,#42A5F5);
+  background: linear-gradient(145deg,#0D47A1,#42A5F5);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.screen-cut-background {
   background: url('/images/screen-cut.png'), -webkit-linear-gradient(305deg,#0D47A1,#42A5F5);
   background: url('/images/screen-cut.png'), linear-gradient(145deg,#0D47A1,#42A5F5);
   background-repeat: no-repeat no-repeat;
   background-position: 5em 40em, 0 0;
   background-size: 70em, cover;
   background-attachment: fixed, fixed;
-  color: #fff;
 }
 
 .flex-container {
@@ -170,8 +179,46 @@ textarea {
   }
 }
 
+.card-box {
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  width: 80%;
+  max-width: 1000px;
+  background: #fff;
+  color: #444;
+  padding: 1em;
+  border-radius: 0.3em;
+  box-shadow: 0 11px 15px -7px rgba(0,0,0,.2), 0 24px 38px 3px rgba(0,0,0,.14), 0 9px 46px 8px rgba(0,0,0,.12);
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+    margin-top: 2em;
+  }
+  p {
+    line-height: 1.4;
+  }
+}
+
+.copyright {
+  text-align: center;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  font-size: 0.9em;
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
 @media (min-width: 600px) {
-  html, body {
+  .screen-cut-background {
     background-position: 30em 40em, 0 0;
   }
 
@@ -228,11 +275,19 @@ textarea {
   .outro {
     margin-top: 2em;
   }
+
+  .card-box {
+    padding: 2em;
+
+    h1 {
+      font-size: 2em;
+    }
+  }
 }
 
 @media (min-width: 900px) {
 
-  html, body {
+  .screen-cut-background {
     background-position: center bottom, 0 0;
   }
 
@@ -270,6 +325,10 @@ textarea {
   .outro {
     display: none;
   }
+
+  .card-box {
+    padding: 4em;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -279,5 +338,9 @@ textarea {
 
   .logo {
     height: 50px;
+  }
+
+  .card-box {
+    padding: 5em;
   }
 }
